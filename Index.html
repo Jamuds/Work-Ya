@@ -9,15 +9,49 @@
 
 <body class="body">
 
-    <header>
-        <div class="cabeza">
-            <a href="" onclick="pageRegistrar()">Registrarse</a>
+    <header id="encabezado">
+        <div class="encabezado">
+            <a href="registrar.html" onclick="pageRegistrar()">Registrarse</a>
             <a href="" onclick="iniciar()">Iniciación</a>
+            <a href="" onclick="contactanos()">Empresas</a>
+            <a href="" onclick="estadisticas()">Estadísticas</a>
+            <a href="" onclick="bllog()">Blog</a>
+            
         </div>
     </header>
 
     <main id="main">
-        <p>holamkhbusdasdasdasdash</p>
+
+        <div class="medio">
+            
+            <img src="img/trabajo.jpg">
+                <div class="texto-encima">
+                     <h1>Work-Ya</h1>
+                </div>
+            <div class="centro">
+                
+                <span>
+                    <input type="text" id="buscarEmpleo" placeholder="Escribe el cargo o Área profesional" onclick="botonEmpleo()">
+                </span>
+                <span>
+                    <input type="text" id="lugar" placeholder="Lugar" onclick="botonLugar()">
+                </span>
+                <button type="button" id="buscar" onclick="botonEmpleo()">
+                   Buscar empleo
+                </button>
+            
+            </div>
+            <h1>Work-Ya</h1>
+            
+
+            <div>
+                
+            </div>
+
+        
+
+            <p>holamkhbusdasdasdasdash</p>
+        </div>
     </main>
 
     <footer>
@@ -28,4 +62,8 @@
         </div>
     </footer>
 
+
+
 </body>
+
+</html>

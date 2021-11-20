@@ -2,6 +2,53 @@
     background-color: colorBotones
 }
 
+.encabezado{
+    text-align: center;
+    background-color: rgba(79, 189, 204, 0.425);
+    color: brown;
+    width: 100%;
+    height: 35px;
+}
+
+.medio{
+    background-color: rgba(170, 144, 144, 0.589);
+}
+
+
+.centro{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    margin: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centro input{
+    background-color: rgba(61, 211, 178, 0.438);
+    position: relative;
+    width: 245px;
+    padding: 5px;
+    text-align: center;
+}
+.centro input:hover{
+    background-color: burlywood;
+    color: darkblue;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.img {
+
+    max-width: 100%;
+    height: auto;
+}
+
 .cabeza{
     text-align: right;
     background-color: silver;
@@ -15,5 +62,6 @@
     color: rgba(52, 31, 172, 1);
     width: 100%;
     height: 100px;
+    
 }
 
