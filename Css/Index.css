@@ -4,16 +4,32 @@
 
 /* Index.html */
 .encabezado1{
-    text-align: center;
+    
     background-color: rgb(0, 0, 0);
-    color: rgb(250, 250, 250);
-    width: 100%;
     height: 35px;
-    margin-bottom: 3px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    
+    
 }
-
+.barraDer a{
+    color: rgb(94, 65, 173);
+    
+    margin: 10px;
+    
+}
+.barraIzq a{
+    color: rgb(25, 177, 139);
+    position: relative;
+       
+    
+    padding-left: 20px;
+    
+}
 .medio{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(207, 203, 203);
+    margin-top: 3px;
     position: relative;
 }
 
@@ -22,7 +38,6 @@
     background-color: rgb(0, 0, 0);
     padding: 8px;
     position: relative;
-    
     margin-top: 10px;
     align-items: center;
     display: flex;
@@ -61,12 +76,13 @@ img {
 }
 
 
-/* Registro.html */
+/* Registrar.html */
 .registro{
-    background-color: rgba(212, 212, 212, 0.671);
+    background-color: rgb(255, 255, 255);
     width: 400px;
-    border-radius: 5%;
-    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #1ab92f;
+    margin: 5% auto;
     text-align: center;
     align-items: center;
     display: flex;
@@ -76,34 +92,203 @@ img {
     margin-right: auto;
 }
 .registro input{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(201, 201, 201);
     position: relative;
+    width:300px;
+    height: 15px;
+    border: solid 1px;
+    outline: none;
+    border-radius: 5px;
     padding: 5px;
     margin: 1px;
     
 }
 .registro input:hover{
-    background-color: rgb(106, 107, 106);
-    box-shadow: cornflowerblue;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  2px 2px 5px #174735;
+    border-radius: 5px;
+    color: blanchedalmond;
 }
+
+.ingresar button{
+    width:300px;
+    height:40px;
+    border: solid 1px;
+    outline: none;
+    border-radius: 25px;
+    
+    margin-bottom: 50px;
+    font-size: 20px;
+    background-color: #188ACA;
+    color: white;
+  }
+  
+  .ingresar button:hover{
+    box-shadow: 2px 2px 5px #188ACA;
+    color: #188ACA;
+    background-color: rgb(255, 255, 255);
+  }
+/* Registro2.html */
+.registro2{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #1ab92f;
+    margin: 5% auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.registro2 input{
+    background-color: rgb(201, 201, 201);
+    position: relative;
+    width:300px;
+    height: 15px;
+    border: solid 1px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 1px;
+    
+}
+.registro2 input:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow:  2px 2px 5px #174735;
+    border-radius: 5px;
+    color: blanchedalmond;
+}
+
+.ingresar button{
+    width:300px;
+    height:40px;
+    border: solid 1px;
+    outline: none;
+    border-radius: 25px;
+    
+    margin-bottom: 50px;
+    font-size: 20px;
+    background-color: #188ACA;
+    color: white;
+  }
+  
+  .ingresar button:hover{
+    box-shadow: 2px 2px 5px #188ACA;
+    color: #188ACA;
+    background-color: rgb(255, 255, 255);
+  }
+
 
 /* Inicio.html */
+.cajon{
+    background-color: rgb(207, 203, 203);
+}
+
 .cabeza{
-    text-align: right;
-    background-color: silver;
-    color: rgba(52, 31, 172, 1);
-    width: 100%;
+    
+    background-color: rgb(241, 255, 161);
+    padding: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.izq {
+    float:left;
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+}
+
+.medio1 {
+    background-color: wheat;
+    display: inline-block;
+    margin:20px;
+    width: 200px;
+    text-align: center;
+}
+
+.dere {
+    float:right;
+    width: 100px;
+	margin: 20px;
 }
 
 
+
+.centro2{
+    background-color:rgba(84, 141, 19, 0.925);
+    margin-top: 3px;
+    
+}
+
+.contenido{
+    color: gold;
+    background-color: rgb(31, 66, 31);
+    position:relative;
+    padding-left: 50px;
+    margin: 0%;
+
+
+}
+.bloque1{
+    position: relative;
+    background-color: rgb(192, 192, 192);
+    padding: 5px;
+    margin: 15px;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.bloque1 :hover{
+    background-color: rgb(249, 255, 212);
+
+}
+.bloque2{
+    position: relative;
+    background-color: rgb(192, 192, 192);
+    padding: 5px;
+    margin: 15px;
+    
+    display: flex;
+    justify-content: center;
+}
+.bloque2 :hover{
+    background-color: rgb(249, 255, 212);
+
+}
+.bloque3{
+    position: relative;
+    background-color: rgb(192, 192, 192);
+    padding: 5px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+.bloque3 :hover{
+    background-color: rgb(249, 255, 212);
+
+}
+.letra{
+    padding: 20px;
+    background-color: rgb(160, 160, 160);
+}
 
 
 .pies{
-    text-align: start;
-    background-color: rgb(185, 185, 185);
-    color: rgb(75, 51, 209);
+    
+    text-align: center;
+    background-color: rgb(255, 179, 179);
+    color: rgb(75, 80, 10);
     width: 100%;
     height: 79px;
-    margin-top: 3px;
+    
       
 }
