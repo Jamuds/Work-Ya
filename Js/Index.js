@@ -31,14 +31,10 @@ function guardarTamanoLetra(texto) {
     localStorage.setItem("tamanoLetra", texto)
     cambiarColorBorde(texto)
 }//
-
-
 function pintarFondo(color){
     var body = document.querySelector("body");
     body.style.backgroundColor = color
 }
-
-
 function boton(color) {
     colorBotones = color
     var botones = document.querySelectorAll("button");
@@ -50,7 +46,6 @@ function boton(color) {
         
       }
 }
-
 function cambiarColorLetra(colorLetra) {
     colorLetras = colorLetra
     var textos = document.getElementsByClassName("texto-class");
@@ -60,7 +55,6 @@ function cambiarColorLetra(colorLetra) {
         texto.style.color = colorLetra;
       }
 }
-
 function cambiarColorBorde(x) {
     colorBordes = x.value
     var textos = document.getElementsByClassName("img-class");
@@ -70,7 +64,6 @@ function cambiarColorBorde(x) {
         texto.style.borderColor = x.value;
       }
 }
-
 function cambiarTamanoLetra(tamanoLetra) {
     var textos = document.querySelectorAll("p");
     console.log(textos.length)
@@ -79,10 +72,28 @@ function cambiarTamanoLetra(tamanoLetra) {
         texto.style.fontSize = tamanoLetra + "px";
       }
 }
-
 function pageRegistrar() {
     var element = document.getElementById("main");
     element.innerHTML = "Contactanos.html"
 }
 
 //boton.className = 'texto-class';
+
+function genera_tabla() {
+    var body = document.getElementsByTagName("body")[0];
+    var tabla   = document.createElement("table");
+    var tblBody = document.createElement("tbody");
+    for (var i = 0; i < 4; i++) {
+        var hilera = document.createElement("tr");
+        for (var j = 0; j < 4; j++) {
+            var celda = document.createElement("td");
+            var textoCelda = document.createTextNode("Oferta "+i+", descripción "+j);
+            celda.appendChild(textoCelda);
+            hilera.appendChild(celda);
+    }
+    tblBody.appendChild(hilera);
+  }
+  tabla.appendChild(tblBody);
+  body.appendChild(tabla);
+  tabla.setAttribute("border", "2");
+}
