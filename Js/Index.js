@@ -1,51 +1,63 @@
-localStorage.setItem("colorFondos", "#FFF");
-
-var colorBotones;
+var colorBotones = localStorage.getItem("colorBoton");
 var colorFondos = localStorage.getItem("colorFondos");
-var colorBordes;
-var colorLetras;
-var sizeFont;  
-//element.style.setProperty("btn", colorBotones)
+var colorLetras = localStorage.getItem("colorLetra");
+var sizeFont = localStorage.getItem("tamanoLetra");
 
 
+pintarFondo(colorFondos || "#FFF")
+boton(colorBotones || "#DEDEDE")
+cambiarColorLetra(colorLetras || "#000000")
+cambiarTamanoLetra(sizeFont || "14px")
 
 console.log(colorFondos);
 
 function iniciar(){
     pintarFondo(colorFondos);
 }
-
-
+//LocalStorage
+function colorboton(color) {
+    localStorage.setItem("colorBoton", color)
+    boton(color)
+}
 function guardarColor(x) {
     localStorage.setItem("colorFondos", x.value)
     pintarFondo(x.value)
 }
+function guardarColorLetra(color) {
+    localStorage.setItem("colorLetra", color)
+    cambiarColorLetra(color)
+}
+function guardarTamanoLetra(texto) {
+    localStorage.setItem("tamanoLetra", texto)
+    cambiarColorBorde(texto)
+}//
+
 
 function pintarFondo(color){
-    var body = document.getElementById("body");
+    var body = document.querySelector("body");
     body.style.backgroundColor = color
 }
 
 
-function boton(y) {
-    colorBotones = y.value
-    var botones = document.getElementsByClassName("btn");
+function boton(color) {
+    colorBotones = color
+    var botones = document.querySelectorAll("button");
     
     console.log(botones.length)
     for (let boton of botones) {
         console.log(boton)
-        boton.style.background = y.value;
+        boton.style.background = color;
         
       }
 }
 
-function cambiarColorLetra(x) {
-    colorLetras = x.value
+function cambiarColorLetra(colorLetra) {
+    colorLetras = colorLetra
     var textos = document.getElementsByClassName("texto-class");
     console.log(textos.length)
     for (let texto of textos) {
         console.log(texto)
-        texto.style.color = x.value;
+        texto.style.color = colorLetra;
       }
 }
 
@@ -59,13 +71,12 @@ function cambiarColorBorde(x) {
       }
 }
 
-function cambiarTamañoLetra(x) {
-    sizeFont = x.value
-    var textos = document.getElementsByClassName("p-size");
+function cambiarTamanoLetra(tamanoLetra) {
+    var textos = document.querySelectorAll("p");
     console.log(textos.length)
     for (let texto of textos) {
         console.log(texto)
-        texto.style.fontSize = x.value;
+        texto.style.fontSize = tamanoLetra + "px";
       }
 }
 

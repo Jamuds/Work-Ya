@@ -15,15 +15,13 @@
 }
 .barraDer a{
     color: rgb(94, 65, 173);
-    
+    position: relative;
     margin: 10px;
     
-}
-.barraIzq a{
+} 
+.barra a{
     color: rgb(25, 177, 139);
     position: relative;
-       
-    
     padding-left: 20px;
     
 }
@@ -31,8 +29,7 @@
     background-color: rgb(207, 203, 203);
     margin-top: 3px;
     position: relative;
-}
-
+} 
 /* botones de busqueda, index */
 .centro{
     background-color: rgb(0, 0, 0);
@@ -57,14 +54,12 @@
     background-color: rgb(135, 222, 171);
     color: rgb(50, 28, 65);
 } 
-
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 68%;
 }
-
 .pie{
     text-align: start;
     background-color: rgb(106, 107, 106);
@@ -74,7 +69,6 @@ img {
     margin-top: 3px;
       
 }
-
 
 /* Registrar.html */
 .registro{
@@ -109,7 +103,6 @@ img {
     border-radius: 5px;
     color: blanchedalmond;
 }
-
 .ingresar button{
     width:300px;
     height:40px;
@@ -121,13 +114,12 @@ img {
     font-size: 20px;
     background-color: #188ACA;
     color: white;
-  }
-  
-  .ingresar button:hover{
+}
+.ingresar button:hover{
     box-shadow: 2px 2px 5px #188ACA;
     color: #188ACA;
     background-color: rgb(255, 255, 255);
-  }
+}
 /* Registro2.html */
 .registro2{
     background-color: rgb(255, 255, 255);
@@ -161,75 +153,78 @@ img {
     border-radius: 5px;
     color: blanchedalmond;
 }
-
 .ingresar button{
     width:300px;
     height:40px;
     border: solid 1px;
     outline: none;
     border-radius: 25px;
-    
     margin-bottom: 50px;
     font-size: 20px;
     background-color: #188ACA;
     color: white;
-  }
-  
-  .ingresar button:hover{
+}
+.ingresar button:hover{
     box-shadow: 2px 2px 5px #188ACA;
     color: #188ACA;
     background-color: rgb(255, 255, 255);
-  }
-
-
-/* Inicio.html */
-.cajon{
-    background-color: rgb(207, 203, 203);
 }
 
+/* Inicio.html */
 .cabeza{
-    
-    background-color: rgb(241, 255, 161);
+    background-color: rgb(255, 255, 255);
     padding: 8px;
     position: relative;
     display: flex;
     justify-content: center;
 
-
 }
-
+.opciones{
+    flex: auto;
+}
 .izq {
-    float:left;
+    float: left;
     width: 100px;
-    height: 50px;
-    margin: 20px;
+    margin-left: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
+.icono{
+    
+    background-color: rgb(255, 255, 255);
+}
+.icono:hover{
+    background-color: rgb(249, 255, 212) !important;
+}
+.medio1  {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
 
-.medio1 {
-    background-color: wheat;
-    display: inline-block;
-    margin:20px;
-    width: 200px;
+}
+.titulo{
+    color: black;
+    font-size: 50px;
+    margin: 0 auto; 
     text-align: center;
 }
-
 .dere {
     float:right;
-    width: 100px;
-	margin: 20px;
+    display: block;
+    margin-right: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
-
-
-
 .centro2{
-    background-color:rgba(84, 141, 19, 0.925);
+    background-color:rgb(255, 255, 255);
     margin-top: 3px;
     
 }
-
 .contenido{
-    color: gold;
-    background-color: rgb(31, 66, 31);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     position:relative;
     padding-left: 50px;
     margin: 0%;
@@ -238,21 +233,20 @@ img {
 }
 .bloque1{
     position: relative;
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     margin: 15px;
-    
     display: flex;
     justify-content: center;
     
 }
 .bloque1 :hover{
-    background-color: rgb(249, 255, 212);
+    background-color: rgb(249, 255, 212) !important;
 
 }
 .bloque2{
     position: relative;
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     margin: 15px;
     
@@ -260,12 +254,12 @@ img {
     justify-content: center;
 }
 .bloque2 :hover{
-    background-color: rgb(249, 255, 212);
+    background-color: rgb(249, 255, 212) !important;
 
 }
 .bloque3{
     position: relative;
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     margin: 15px;
     display: flex;
@@ -273,7 +267,7 @@ img {
     
 }
 .bloque3 :hover{
-    background-color: rgb(249, 255, 212);
+    background-color: rgb(249, 255, 212) !important;
 
 }
 .letra{
@@ -281,14 +275,36 @@ img {
     background-color: rgb(160, 160, 160);
 }
 
+/* configPage.html */
 
-.pies{
-    
-    text-align: center;
-    background-color: rgb(255, 179, 179);
-    color: rgb(75, 80, 10);
-    width: 100%;
-    height: 79px;
-    
-      
+.contenedor{
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
+
+.bot{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #2a312b;
+    margin: 5% auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    display: block;
+    
+}
+
+/* Ofertas.html */
+
+
+
+/* Contactanos.html */
+
+

@@ -4,32 +4,34 @@
 <head charset="utf-8">
     <title>WorkYa</title>
     <link rel="stylesheet" href="css/Index.css" />
-    <script src="Js/Index.js"></script>
+    
     <script src="https://kit.fontawesome.com/09d573e9ac.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="body">
+<body>
 
     <div>
 
-        <div class="cabeza">
+        <div class="cabeza  texto-class">
+          
           <span class="opciones">        
-            
-              <div class="izq">
-                <button class="icono">Config. Usuario</button>
-              </div>
 
               <div class="medio1">
-                <a href="Index.html"> <h1>Work-Ya</h1>
+                <a href="Index.html"> <h1 class="titulo">Work-Ya</h1>
                 </a>
               </div>
 
-              <div class="dere">
-                <span>
-                    <input id="filtro" type="text" placeholder="Filtrar" />
-                </span> 
+              <div>
+                <div class="izq">
+                
+                  <button class="icono" ><img src="img/Gear.png"></button>
+                </div>
+                <div class="dere">
+                  <span>
+                      <input id="filtro" type="text" placeholder="Filtrar" />
+                  </span> 
+                </div>
               </div>
-
           </span>
           
         </div>
@@ -37,9 +39,9 @@
     </div>
 
     <div class="centro2">
-      <h3 class="contenido">¿Qué tipo de empleo estás buscando?</h3>
+      <h3 class="contenido texto-class">¿Qué tipo de empleo estás buscando?</h3>
         
-        <div class="bloque1">
+        <div class="bloque1 texto-class">
           <button id="a" class="letra bloque1" >
             A
           </button>
@@ -63,7 +65,7 @@
           </button>
         </div>
 
-        <div class="bloque2">
+        <div class="bloque2 texto-class">
           <button id="h" class="letra bloque2" >
             H
           </button>
@@ -85,9 +87,10 @@
           <button id="n" class="letra bloque2" >
             N
           </button>
+          
         </div>  
         
-        <div class="bloque3">
+        <div class="bloque3 texto-class">
           <button id="o" class="letra bloque3" >
             O
           </button>
@@ -118,17 +121,20 @@
 
     </div>    
 
-      <div class="pies">
+      <div class="pie texto-class">
         <a href="Index.html">Login
         </a>
         <br>
         <a href="Contactanos.html" target="_self">¿Quiénes somos?
         </a>
+        <br>
+        <a href="ofertas.html" target="_self">ofertas
+        </a>
       
       </div>
 
     
-
+      <script src="Js/Index.js"></script>
 </body>
 
 </html>

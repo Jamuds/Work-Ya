@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head charset="utf-8">
+    <title>Work-Ya</title>
+    <link rel="stylesheet" href="css/Index.css" />
+    <script src="Js/Index.js"></script>
+</head>
+
+<body class="body">
+
+    <header>
+
+        <div class="encabezado1">
+            
+            <div class="barra">
+                <a href="Inicio.html" onclick="iniciar()">Home</a>
+                <a href="Contactanos.html" onclick="contactanos()">Contáctanos</a>
+                
+            </div>
+            
+        </div>
+
+    </header>
+
+    <main id="main1">
+
+        <div class="centro">
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

@@ -4,60 +4,57 @@
 <head charset="utf-8">
     <title>Work-Ya</title>
     <link rel="stylesheet" href="css/Index.css" />
-    <script src="Js/Index.js"></script>
+    
 </head>
 
-<body class="body" >
+<body>
 
-    <script>
-        iniciar()
-    </script>
+    <header id="encabezado3">
+        <div class="encabezado1 texto-class">
+            
+            <div class="barra">
+                <a href="Inicio.html" onclick="iniciar()">Home</a>
+                <a href="Contactanos.html" onclick="contactanos()">Contáctanos</a>
+                
+            </div>
+            
+        </div>
+    </header>
 
     <div class="contenedor">
 
         
-
-        <h3>Cambiar color de botón</h3>
-        <input type="color" id="colorpickerbtn" onchange="boton(this)">
-        <br>
-        <h3>Cambiar color de fondo</h3>
-        <input type="color" id="colorpicker" onchange="guardarColor(this)">
-        <br>
-        <h3>Cambiar color de textos</h3>
-        <input type="color" id="colorpickertxt" onchange="cambiarColorLetra(this)">
-        <br>
-        <h3>Cambiar color de borde</h3>
-        <input type="color" id="colorpickerborde" onchange="cambiarColorBorde(this)">
-        <br>
-        <h3>Cambiar tamaño letras</h3>
-        <input type="number" id="font-size" onchange="cambiarTamañoLetra(this)">
-
-        <button type="button" class="btn">Hola</button>
-        <button type="button" class="btn">Hola2</button>
-
+        <div class="bot texto-class">
+            <h4>Cambiar color de botón</h4>
+                <input type="color" id="colorpickerbtn" onchange="colorboton(this.value)">
+                
+            <h4>Cambiar color de fondo</h4>
+                <input type="color" id="colorpicker" onchange="guardarColor(this)">
+                    
+            <h4>Cambiar color de textos</h4>
+                <input type="color" id="colorpickertxt" onchange="guardarColorLetra(this.value)">
+                
+            <h4>Cambiar color de borde</h4>
+                <input type="color" id="colorpickerborde" onchange="guardarColorBorde(this)">
+                    
+            <h4>Cambiar tamaño letras</h4>
+                <input type="number" id="font-size" onchange="guardarTamanoLetra(this.value)">
+        </div>          
+       
+    </div>      
     
-        
-            <h2 class="texto-class">Work-Ya</h2>
-            <!--img class="img-class" src="img/trabajo.jpg"-->
-            <p class="texto-class p-size"  >Where can I get some?
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        <footer class="pie texto-class">
 
             <button>
                 <a href="Contactanos.html">
                     Contáctanos
                 </a>
 
-            </button>
+            </button> 
 
+        </footer>
 
-        
-    </div>
-
-    <font color="Olive" face="Comic Sans MS,arial">
-        <h1 align="center"><i>Cocina para Todos</i></h1>
-        <h2 align="center">La cocina tu alcance</h2>
-        </font>
-
+        <script src="Js/Index.js"></script>
 </body>
 
 </html>
