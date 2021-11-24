@@ -16,12 +16,18 @@
         </div>
     </header>
 
-
+    <main id="main" class="main">
         <div class="registro2">
             <div class="caja2">
                 <br>
                     <h3>REGISTRAR EMPRESA</h3>   
-                <div class="usuarioEmpresa">
+                    <div class="usuarioEmpresa">
+                        <span>
+                            <input id="empresa" type="text" placeholder="Nombre de la empresa" />
+                        </span> 
+                    </div>
+                    <br>
+                    <div class="usuarioEmpresa">
                     <span>
                         <input id="correo" type="text" placeholder="E-mail" />
                     </span> 
@@ -34,7 +40,7 @@
                     <br> 
                     <br>
                     <span>
-                        <input id="password" type="password" placeholder="Confirmación Contraseña" />
+                        <input id="passwordConfirm" type="password" placeholder="Confirmación Contraseña" />
                     </span>  
                     <br>
                     <br>
@@ -45,35 +51,15 @@
                 </div>
                 <br>
                 <div class="ingresar">
-                    <button onclick="ingresar()">Ingresar</button>
-
+                    <button onclick="registrarEmpresas()">Registrar</button>
                 </div>
 
             </div>    
         </div>
-
+    </main>
 
     <footer>
-        <button>
-            <a href="Index.html">Login
-            </a>
-        </button>
-
-        <button>
-            <a href="Contactanos.html" target="_self">¿Quiénes somos?
-            </a>
-        </button>
-
-        <button>
-            <a href="configPage.html" target="_self">colores
-            </a>
-        </button>
-
-        <button>
-            <a href="Inicio.html">Inicio
-            </a>
-        </button>
-
+      
     </footer>
     <script src="Js/Index.js"></script>
 </body>

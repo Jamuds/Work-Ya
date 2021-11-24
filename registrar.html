@@ -16,11 +16,18 @@
         </div>
     </header>
 
+    <main id="main" class="main">
 
         <div class="registro">
             <div class="caja1">
                 <br>
                     <h3>REGISTRAR EMPLEADO</h3>
+                <div class="usuarioDesempleado">
+                    <span>
+                        <input id="usuario" type="text" placeholder="Nombre" />
+                    </span> 
+                </div>
+                <br>
                 <div class="usuarioDesempleado">
                     <span>
                         <input id="correo" type="text" placeholder="E-mail" />
@@ -33,7 +40,7 @@
                     </span> 
                     <br>  <br>
                     <span>
-                        <input id="password" type="password" placeholder="Confirmación Contraseña" />
+                        <input id="passwordConfirm" type="password" placeholder="Confirmación Contraseña" />
                     </span>  
                     <br> <br>
                     <span>
@@ -43,34 +50,16 @@
                 </div>
                 <br>
                 <div class="ingresar">
-                    <button onclick="ingresar()">Ingresar</button>
-
+                    <button onclick="registrarUsuario()">Registrar</button>
                 </div>
                 
             </div>    
         </div>
 
+    </main>
 
     <footer>
-        <button>
-            <a href="Index.html">Login
-            </a>
-        </button>
-
-        <button>
-            <a href="Contactanos.html" target="_self">¿Quiénes somos?
-            </a>
-        </button>
-
-        <button>
-            <a href="configPage.html" target="_self">colores
-            </a>
-        </button>
-
-        <button>
-            <a href="Inicio.html">Inicio
-            </a>
-        </button>
+        
 
     </footer>
     <script src="Js/Index.js"></script>
