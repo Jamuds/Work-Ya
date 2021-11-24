@@ -2,7 +2,7 @@ var colorBotones = localStorage.getItem("colorBoton");
 var colorFondos = localStorage.getItem("colorFondos");
 var colorLetras = localStorage.getItem("colorLetra");
 var sizeFont = localStorage.getItem("tamanoLetra");
-
+var nombreUsuario = localStorage.getItem("nombreUsuario")
 
 pintarFondo(colorFondos || "#FFF")
 boton(colorBotones || "#DEDEDE")
@@ -156,6 +156,11 @@ function listarOfertas() {
         var categoria = document.createElement("p");
         var textoCategoria = document.createTextNode(ofertas.ofertas[i].categoria);
         categoria.appendChild(textoCategoria);
+
+        var aplicar = document.createElement("button");
+        var textoAplicar = document.createTextNode("Aplicar");
+        aplicar.appendChild(textoAplicar);
+        aplicar.addEventListener(onclick, aplicarOferta(ofertas.ofertas[i]))
         
         lista.appendChild(nombreEmpresa);
         lista.appendChild(br);
@@ -164,10 +169,30 @@ function listarOfertas() {
         lista.appendChild(descripcion);
         lista.appendChild(salario);
         lista.appendChild(categoria);
+        lista.appendChild(br);
+        lista.appendChild(aplicar);
+        
     }
     body.appendChild(br);
     body.appendChild(lista);
     body.appendChild(br);
+}
+
+var aplicaciones = JSON.parse(localStorage.getItem("aplicaciones"));
+
+function aplicarOferta(oferta){
+    if (aplicaciones == null){
+        aplicaciones = {
+            aplicaciones:[]
+        }
+    }
+    aplicaciones.aplicaciones.push({
+        "descripcion": oferta.descripcion,
+        "salario": oferta.salario
+    });
+    console.log(aplicaciones);
+    localStorage.setItem("aplicaciones", JSON.stringify( aplicaciones ));
+
 }
 
 aspirantes = {
@@ -224,4 +249,94 @@ function crearOferta(){
     console.log(ofertas);
     localStorage.setItem("ofertas", JSON.stringify( ofertas ));
 
+}
+
+//Registro para usuarios 
+
+var usuarios = JSON.parse(localStorage.getItem("usuarios"));
+
+function registrarUsuario(){
+    if (usuarios == null){
+        usuarios = {
+            usuarios:[]
+        }
+    }
+
+    var password = document.getElementById("password").value
+    var passwordConfirm = document.getElementById("passwordConfirm").value
+    if(password == passwordConfirm){
+        usuarios.usuarios.push({
+            "nombreUsuario": document.getElementById("usuario").value,
+            "correo": document.getElementById("correo").value,
+            "contrasena": password,
+            "palabraClave": document.getElementById("clave").value,
+        });
+        console.log(usuarios);
+        localStorage.setItem("usuarios", JSON.stringify( usuarios ));
+    
+    }else{
+        alert("Las contraseñas no coinciden")
+    }
+}
+
+//Registro para empresas 
+
+var empresas = JSON.parse(localStorage.getItem("empresas"));
+
+function registrarEmpresas(){
+    if (empresas == null){
+        empresas = {
+            empresas:[]
+        }
+    }
+    var password = document.getElementById("password").value
+    var passwordConfirm = document.getElementById("passwordConfirm").value
+    if(password == passwordConfirm){
+        
+        empresas.empresas.push({
+            "nombreEmpresa": document.getElementById("empresa").value,
+            "correo": document.getElementById("correo").value,
+            "contrasena": document.getElementById("password").value,
+            "palabraClave": document.getElementById("clave").value,
+        });
+        console.log(empresas);
+        localStorage.setItem("empresas", JSON.stringify( empresas ));
+    
+    }else{
+        alert("Las contraseñas no coinciden")
+    }
+}
+
+//Login
+
+function ingresar(){
+    var usuario = document.getElementById("usuario").value
+    var password = document.getElementById("contrasena").value
+
+    var listaUsuarios = JSON.parse(localStorage.getItem("usuarios"));
+    console.log(listaUsuarios)
+    console.log(usuario)
+    console.log(listaUsuarios.usuarios[0].contrasena)
+    for (var i = 0; i < listaUsuarios.usuarios.length; i++) {
+        if(usuario == listaUsuarios.usuarios[i].nombreUsuario){
+            if(password == listaUsuarios.usuarios[i].contrasena){
+                localStorage.setItem("nombreUsuario", listaUsuarios.usuarios[i].nombreUsuario)
+                location.href="desempleado.html"
+                return
+            }
+        }
+    }
+
+    var listaEmpresas = JSON.parse(localStorage.getItem("empresas"));
+    for (var i = 0; i < listaEmpresas.empresas.length; i++) {
+        if(usuario == listaEmpresas.empresas[i].nombreEmpresa){
+            if(password == listaEmpresas.empresas[i].contrasena){
+                localStorage.setItem("nombreUsuario", listaEmpresas.empresas[i].nombreEmpresa)
+                location.href="empresas.html"
+                return
+            }
+        }
+
+    }
+    alert("El usuario invalido")
 }
