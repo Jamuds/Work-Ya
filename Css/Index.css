@@ -37,7 +37,7 @@
     background-color: rgb(0, 0, 0);
     padding: 8px;
     position: relative;
-    margin-top: 10px;
+    margin-top: 5px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -62,15 +62,17 @@ img {
     margin-right: auto;
     width: 400px;
 }
-
 .pie{
-    text-align: start;
-    background-color: rgb(106, 107, 106);
+    text-align: center;
+    background-color: rgb(211, 211, 211);
     color: rgb(75, 51, 209);
     width: 100%;
     height: 79px;
     margin-top: 3px;
-      
+    
+}
+.table {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* Registrar.html */
@@ -104,7 +106,7 @@ img {
     background-color: rgb(255, 255, 255);
     box-shadow:  2px 2px 5px #174735;
     border-radius: 5px;
-    color: blanchedalmond;
+    color: rgb(0, 0, 0);
 }
 .ingresar button{
     width:300px;
@@ -154,7 +156,7 @@ img {
     background-color: rgb(255, 255, 255);
     box-shadow:  2px 2px 5px #174735;
     border-radius: 5px;
-    color: blanchedalmond;
+    color: rgb(0, 0, 0);
 }
 .ingresar button{
     width:300px;
@@ -192,13 +194,7 @@ img {
     margin-top: 32px;
     margin-bottom: 32px;
 }
-/*.icono{
-   
-    background-color: rgb(255, 255, 255);
-}
-.icono:hover{
-    background-color: rgb(223, 223, 223);
-}*/
+
 .medio1 {
     background-color: rgb(255, 255, 255);
     display: block;
@@ -280,34 +276,63 @@ img {
 
 /* configPage.html */
 
-.contenedor{
-    display: flex;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-}
 
 .bot{
     background-color: rgb(255, 255, 255);
-    width: 700px;
+    width: 300px;
     border-radius: 20px;
     box-shadow: 0 0 10px #2a312b;
-    margin: 5% auto;
+    margin: 3% auto;
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: right;
     display: block;
-    
 }
 
-/* Ofertas.html */
+.bot input{
+    margin-bottom: 10px;
+}
 
-
-
-/* Contactanos.html */
-
-
+.centroMain{
+    
+    width: 300px;
+    background-color: rgba(255, 255, 0, 0.3);
+    padding: 8px;
+    border-radius: 20px;
+    position: relative;
+    margin: 5% auto;
+    text-align: center;
+    margin-top: 5px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+   
+}
+.centroMain input{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 170px;
+    padding: 5px;
+    text-align: center;
+    margin: 1px;
+    border-radius: 3px;
+    
+}
+.centroMain input:hover{
+    background-color: rgb(68, 68, 68);
+    color: rgb(190, 189, 189);
+}
+.centroMain button{
+   
+    height: 30px;
+    border: solid 1px;
+    outline: none;
+    border-radius: 3px;
+    color: rgb(70, 70, 70);
+}
+.centroMain button:hover{
+    box-shadow: 2px 2px 5px #400253;
+    color: #000000;
+    background-color: rgb(0, 0, 0);
+}

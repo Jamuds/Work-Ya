@@ -55,15 +55,6 @@ function cambiarColorLetra(colorLetra) {
         texto.style.color = colorLetra;
       }
 }
-/*function cambiarColorBorde(x) {
-    colorBordes = x.value
-    var textos = document.getElementsByClassName("img-class");
-    console.log(textos.length)
-    for (let texto of textos) {
-        console.log(texto)
-        texto.style.borderColor = x.value;
-      }
-}*/
 function cambiarTamanoLetra(tamanoLetra) {
     var textos = document.querySelectorAll("p");
     console.log(textos.length)
@@ -77,8 +68,6 @@ function pageRegistrar() {
     var element = document.getElementById("main");
     element.innerHTML = "Contactanos.html"
 }
-
-//boton.className = 'texto-class';
 
 function genera_tabla() {
     var body = document.getElementsByTagName("body")[0];
@@ -134,7 +123,7 @@ function listarAspirantes() {
 }
 
 function listarOfertas() {
-    var body = document.getElementsByTagName("body")[0];
+    var body = document.getElementsByTagName("main")[0];
     var lista = document.createElement("div");
     var br = document.createElement("br");
     for (var i = 0; i < ofertas.ofertas.length; i++) {
@@ -205,7 +194,7 @@ aspirantes = {
     ]
 }
 
-/*listaOfertas = {
+/*para la precentación = {
     "ofertas":[
         {
             "nombre":"Maramud cevicheria",
@@ -338,5 +327,7 @@ function ingresar(){
         }
 
     }
-    alert("El usuario invalido")
+    alert("El usuario ó la contraseña son inválidas")
+
+    
 }

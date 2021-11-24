@@ -13,10 +13,12 @@
 
 
         <div class="encabezado1 texto-class">
+            <img src="img/WorkYa.jpg" style="width: 80px; margin: 0;">
             <div class="barra">                    
                     <a href="Index.html" onclick="pageRegistrar()">Salir</a> 
+                    <a href="desempleado.html">Atrás</a>
                     <a href="configPage.html" onclick="personalizar()">Personalizar página</a>   
-                    <a href="ConfigUser.html" onclick="crear()">Personalizar usuario</a>   
+                    <!-- <a href="ConfigUser.html">Personalizar usuario</a> -->      
                     <a href="Oferta.html" onclick="ofertas()">Ver ofertas</a>
                     
             </div>
@@ -29,17 +31,16 @@
 
                 
                 <div class="bot texto-class">
+                    <br>
                     <h4>Cambiar color de botón</h4>
-                        <input type="color" id="colorpickerbtn" onchange="colorboton(this.value)">
-                        
+                        <input type="color" id="colorpickerbtn" onchange="colorboton(this.value)"> 
                     <h4>Cambiar color de fondo</h4>
-                        <input type="color" id="colorpicker" onchange="guardarColor(this)">
-                            
+                        <input type="color" id="colorpicker" onchange="guardarColor(this)">                            
                     <h4>Cambiar color de textos</h4>
-                        <input type="color" id="colorpickertxt" onchange="guardarColorLetra(this.value)">
-                                        
+                        <input type="color" id="colorpickertxt" onchange="guardarColorLetra(this.value)">                                        
                     <h4>Cambiar tamaño letras</h4>
                         <input type="number" id="font-size" onchange="guardarTamanoLetra(this.value)">
+                  
                 </div>          
             
             </div>      
