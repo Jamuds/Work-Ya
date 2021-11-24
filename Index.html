@@ -11,57 +11,47 @@
 
     <header id="encabezado1">
         <div class="encabezado1 texto-class">
-          
-            <div class="barra">
-                
-                    <a href="Inicio.html" onclick="iniciar()">Home</a>
-                    <a href="" onclick="contactanos()">Empresas</a>
-                    <a href="" onclick="estadisticas()">Estadísticas</a>
-                    <a href="" onclick="blog()">Blog</a>
-                       
-            </div>
-            
-            <div class="barraDer">
-                     
-                    <a href="registrar.html" onclick="pageRegistrar()">Registrar empleado</a> 
-                   
-                    <a href="registro2.html" onclick="pageRegistrar2()">Registrar empresa</a>
-                    
-            </div>
-           
+            <div class="barraDer">                    
+                    <a href="registrar.html">Registrar empleado</a> 
+                    <a href="registro2.html">Registrar empresa</a>   
+            </div>           
         </div>
     </header>
 
-    <main id="main">
+    <main id="main" class="main">
 
         <div class="medio texto-class">
             
-            <img src="img/WorkYa.jpg">
-                
-            <div class="centro">
-                
-                <span>
-                    <input type="text" id="buscarEmpleo" placeholder="Escribe profesion" onclick="busquedaEmpleo()">
-                </span>
-                <span>
-                    <input type="text" id="lugar" placeholder="Lugar" onclick="botonLugar()">
-                </span>
-                <button type="button" id="buscar" onclick="botonEmpleo()">
-                   Buscar empleo
-                </button>
-            
-            </div>            
-
-            
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="img/WorkYa.jpg" style="width: 50%;">
+                        </td>
+                        <td>
+                            <span>
+                                <input type="text" id="usuario" placeholder="usuario">
+                            </span>
+                            <span>
+                                <input type="password" id="contraseña" placeholder="contraseña">
+                            </span>
+                            <span>
+                                <button type="button" id="ingresar" onclick="ingresar()">
+                                Ingresar
+                                </button>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>    
         </div>
     </main>
 
     <footer>
         <div class="pie texto-class">
             
-            <a href="Contactanos.html" target="_self">¿Quiénes somos?</a>
-            <br>
-            <a href="configPage.html" target="_self">colores</a>
+            <a href="quienesSomos.html" target="_self">¿Quiénes somos?</a>
+            
         </div>
     </footer>
 

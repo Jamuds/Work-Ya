@@ -6,23 +6,25 @@
 .encabezado1{
     
     background-color: rgb(0, 0, 0);
-    height: 35px;
+    height: 45px;
     margin-top: 10px;
     align-items: center;
     display: flex;
+    padding: 20px;
     
     
 }
-.barraDer a{
-    color: rgb(94, 65, 173);
+/*.barraDer a{
+    color: rgb(255, 255, 255);
     position: relative;
-    margin: 10px;
+    margin: 15px;
+
     
-} 
+} */
 .barra a{
-    color: rgb(25, 177, 139);
+    color: rgb(255, 255, 255);
     position: relative;
-    padding-left: 20px;
+    padding-left: 15px;
     
 }
 .medio{
@@ -58,8 +60,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 68%;
+    width: 400px;
 }
+
 .pie{
     text-align: start;
     background-color: rgb(106, 107, 106);
@@ -189,14 +192,14 @@ img {
     margin-top: 32px;
     margin-bottom: 32px;
 }
-.icono{
-    
+/*.icono{
+   
     background-color: rgb(255, 255, 255);
 }
 .icono:hover{
-    background-color: rgb(249, 255, 212) !important;
-}
-.medio1  {
+    background-color: rgb(223, 223, 223);
+}*/
+.medio1 {
     background-color: rgb(255, 255, 255);
     display: block;
     justify-content: center;
@@ -241,7 +244,7 @@ img {
     
 }
 .bloque1 :hover{
-    background-color: rgb(249, 255, 212) !important;
+    background-color: rgb(249, 255, 212) ;
 
 }
 .bloque2{
@@ -254,7 +257,7 @@ img {
     justify-content: center;
 }
 .bloque2 :hover{
-    background-color: rgb(249, 255, 212) !important;
+    background-color: rgb(249, 255, 212);
 
 }
 .bloque3{
@@ -267,7 +270,7 @@ img {
     
 }
 .bloque3 :hover{
-    background-color: rgb(249, 255, 212) !important;
+    background-color: rgb(249, 255, 212) ;
 
 }
 .letra{

@@ -9,50 +9,51 @@
 
 <body>
 
-    <header id="encabezado3">
+    <header>
+
+
         <div class="encabezado1 texto-class">
-            
-            <div class="barra">
-                <a href="Inicio.html" onclick="iniciar()">Home</a>
-                <a href="Contactanos.html" onclick="contactanos()">Contáctanos</a>
-                
+            <div class="barra">                    
+                    <a href="Index.html" onclick="pageRegistrar()">Salir</a> 
+                    <a href="configPage.html" onclick="personalizar()">Personalizar página</a>   
+                    <a href="ConfigUser.html" onclick="crear()">Personalizar usuario</a>   
+                    <a href="Oferta.html" onclick="ofertas()">Ver ofertas</a>
+                    
             </div>
-            
         </div>
+        
     </header>
 
-    <div class="contenedor">
+    <main id="main" class="main">
+            <div class="contenedor">
+
+                
+                <div class="bot texto-class">
+                    <h4>Cambiar color de botón</h4>
+                        <input type="color" id="colorpickerbtn" onchange="colorboton(this.value)">
+                        
+                    <h4>Cambiar color de fondo</h4>
+                        <input type="color" id="colorpicker" onchange="guardarColor(this)">
+                            
+                    <h4>Cambiar color de textos</h4>
+                        <input type="color" id="colorpickertxt" onchange="guardarColorLetra(this.value)">
+                                        
+                    <h4>Cambiar tamaño letras</h4>
+                        <input type="number" id="font-size" onchange="guardarTamanoLetra(this.value)">
+                </div>          
+            
+            </div>      
+    </main>
+    <footer class="pie texto-class">
 
         
-        <div class="bot texto-class">
-            <h4>Cambiar color de botón</h4>
-                <input type="color" id="colorpickerbtn" onchange="colorboton(this.value)">
-                
-            <h4>Cambiar color de fondo</h4>
-                <input type="color" id="colorpicker" onchange="guardarColor(this)">
-                    
-            <h4>Cambiar color de textos</h4>
-                <input type="color" id="colorpickertxt" onchange="guardarColorLetra(this.value)">
-                
-            <h4>Cambiar color de borde</h4>
-                <input type="color" id="colorpickerborde" onchange="guardarColorBorde(this)">
-                    
-            <h4>Cambiar tamaño letras</h4>
-                <input type="number" id="font-size" onchange="guardarTamanoLetra(this.value)">
-        </div>          
+            <a href="quienesSomos.html">
+                ¿Quiénes somos?
+            </a>
+
        
-    </div>      
-    
-        <footer class="pie texto-class">
 
-            <button>
-                <a href="Contactanos.html">
-                    Contáctanos
-                </a>
-
-            </button> 
-
-        </footer>
+    </footer>
 
         <script src="Js/Index.js"></script>
 </body>
